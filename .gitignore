@@ -1,0 +1,9 @@
+# Mac junk
+.DS_Store
+
+# Editor folders
+.vscode/
+
+# Any env files if you ever add them
+.env
+.env.local

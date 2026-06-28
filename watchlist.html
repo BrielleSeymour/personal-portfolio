@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Case Study — Brielle Seymour</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Fixed top navbar (same as index.html) -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="nav-name">Brielle Seymour</a>
+      <div class="nav-links">
+        <a href="resume.html" class="nav-link">Resume</a>
+        <a href="mailto:brielleseymour@gmail.com" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="case-study-layout">
+
+    <!-- ── Left sidebar ── -->
+    <aside class="case-study-sidebar">
+      <a href="index.html" class="back-link">← Back</a>
+
+      <!-- TOC links — href must match section id attributes below -->
+      <nav class="toc">
+        <a href="#overview"        class="toc-link">Overview</a>
+        <a href="#solution"        class="toc-link">Solution</a>
+        <a href="#design-process"  class="toc-link">Design process</a>
+        <a href="#final-design"    class="toc-link">Final design</a>
+        <a href="#reflection"      class="toc-link">Reflection</a>
+      </nav>
+    </aside>
+
+    <!-- ── Main content ── -->
+    <article class="case-study-content">
+
+      <!-- Header -->
+      <p class="case-study-eyebrow">Case Study</p>
+      <h1 class="case-study-title">Letterboxd Watchlist Picker</h1>
+
+      <!-- Hero image -->
+      <div class="case-study-hero">
+        <img src="assets/Watchlist Picker Form.png" alt="Letterboxd Watchlist Picker hero image">
+      </div>
+
+      <!-- Project meta table -->
+      <div class="case-study-meta">
+        <div class="meta-col">
+          <p class="meta-label">Project Type</p>
+          <p class="meta-value">Passion Project</p>
+        </div>
+        <div class="meta-col">
+            <p class="meta-label">Team</p>
+            <p class="meta-value">Solo</p>
+        </div>
+        <div class="meta-col">
+            <p class="meta-label">Timeline</p>
+            <p class="meta-value">December 2025</p>
+        </div>
+        <div class="meta-col">
+          <p class="meta-label">Skills</p>
+          <p class="meta-value">Prototyping</p>
+          <p class="meta-value">UI/UX Design</p>
+          <p class="meta-value">Web Development</p>
+        </div>
+        <div class="meta-col">
+          <p class="meta-label">Stack</p>
+          <p class="meta-value">Figma</p>
+          <p class="meta-value">React.js</p>
+          <p class="meta-value">JavaScript</p>
+        </div>
+      </div>
+
+      <!-- ── Sections — duplicate and fill in per project ── -->
+
+      <section id="overview" class="case-study-section">
+        <h2 class="section-heading">Overview</h2>
+        <p class="section-oneliner">
+            When my friends and I are choosing a movie to watch, we often find it hard to come to a unanimous decision.
+        </p>
+        <p class="section-body">
+            Decision paralysis, conflicting tastes and endless searching can make it feel impossible to find something that everyone is interested in.
+        </p>
+      </section>
+
+      <section id="solution" class="case-study-section">
+        <h2 class="section-heading">Solution</h2>
+        <p class="section-oneliner">
+            A random film generator that selects movies from one or more users Letterboxd Watchlist.
+        </p>
+        <p class="section-body">
+          This solution helps users decide what movie to watch by generating and displaying a random film from their watchlist. Users can enter more than one username and specify whether the movie should be selected from either or all of their watchlists.
+        </p>
+      </section>
+
+      <section id="design-process" class="case-study-section">
+        <h2 class="section-heading">Design process</h2>
+        <p class="section-body">
+          Write your content here.
+        </p>
+      </section>
+
+      <section id="final-design" class="case-study-section">
+        <h2 class="section-heading">Final design</h2>
+        <p class="section-body">
+          The site was built in React.js with Tailwind CSS. Because Letterboxd's API isn't public, watchlist data is retrieved via web scraping using the Cheerio library for Node.js.
+        </p>
+      </section>
+
+      <section id="reflection" class="case-study-section">
+        <h2 class="section-heading">Reflection</h2>
+        <p class="section-body">
+          Write your content here.
+        </p>
+      </section>
+
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>Last update: June 2026</p>
+    <p>© 2026 Brielle Seymour. All rights reserved.</p>
+  </footer>
+
+  <script src="case-study.js"></script>
+  <div class="cursor"></div>
+  <script src="cursor.js"></script>
+</body>
+</html>
