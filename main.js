@@ -1,18 +1,23 @@
 document.querySelectorAll('a').forEach(link => {
-  // Skip external links, mailto, and same-page anchors
+  const href = link.getAttribute('href');
+
+  // Skip external links, mailto, same-page anchors,
+  // and anything that isn't an HTML page
   if (
     link.hostname !== window.location.hostname ||
-    link.getAttribute('href')?.startsWith('#') ||
-    link.getAttribute('href')?.startsWith('mailto')
+    href?.startsWith('#') ||
+    href?.startsWith('mailto:') ||
+    !href?.endsWith('.html')
   ) return;
 
   link.addEventListener('click', e => {
     e.preventDefault();
-    const href = link.getAttribute('href');
 
-    // Trigger fade out, then navigate once it's done
     document.body.classList.add('is-leaving');
-    setTimeout(() => { window.location.href = href; }, 100);
+
+    setTimeout(() => {
+      window.location.href = href;
+    }, 100);
   });
 });
 
