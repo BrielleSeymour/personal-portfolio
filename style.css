@@ -9,7 +9,7 @@
   --color-tag-bg: rgba(6, 82, 221, 0.12);
   --color-accent:     #0652DD;
 
-  --nav-height:       60px;
+  --nav-height:       55px;
   --page-padding-x:   5vw;
   --content-max:      1800px;
 
@@ -82,7 +82,7 @@ img {
   z-index: 100;
   height: var(--nav-height);
   background: var(--color-bg);
-  border-bottom: 1px solid var(--color-border);
+  border-bottom: 0.5px solid var(--color-border);
 }
 
 /* Inner wrapper mirrors .page-content's max-width and padding */
